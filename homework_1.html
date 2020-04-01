@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript Homework 1</title>
+
+    <link rel="stylesheet" href="css/style.css?ver=1.3">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body class="b-page">
+    <div class="b-page__homework center">
+        <section class="b-homework__line">
+            <div class="b-line__task">
+                <p class="b-line__header">Задача 1</p>
+                <fieldset class="b-line__form-wrapper">
+                    <legend class="b-form__legend">Конвертер температуры</legend>
+                    <label for="temp-convert">Введите температуру в градусах Цельсия:
+                        <input type="text" class="b-line__convert" id="temp-convert">
+                    </label>
+                    <button class="b-line__button b-line__button_margin_top" onclick="convertCtoF()">Посчитать</button>
+                    <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+                </fieldset>
+            </div>
+        </section>
+        <section class="b-homework__line">
+            <div class="b-line__task">
+                <p class="b-line__header">Задача 2</p>
+                <fieldset class="b-line__form-wrapper">
+                    <legend class="b-form__legend">Копирование значения из одной переменной в другую</legend>
+                    <label for="user-admin">Введите имя пользователя:
+                        <input type="text" class="b-line__user" id="user-admin">
+                    </label>
+                    <button class="b-line__button b-line__button_margin_top" onclick="makeAdmin()">Enter</button>
+                    <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+                </fieldset>
+                <p class="b-line__addition">* Загляните в консоль, чтобы увидеть результат работы команды – <b>consol.log(admin)</b>.</p>
+            </div>
+        </section>
+        <section class="b-homework__line">
+            <div class="b-line__task">
+                <p class="b-line__header">Задача 3</p>
+                <fieldset class="b-line__form-wrapper">
+                    <legend class="b-form__legend">Рассчет значения выражений</legend>
+                    <p class="b-line__expression">10 + 10 + "10" = <b class="b-result__answer"></b></p>
+                    <p class="b-line__expression">10 + "10" + 10 = <b class="b-result__answer"></b></p>
+                    <p class="b-line__expression">10 + 10 + +10 = <b class="b-result__answer"></b></p>
+                    <p class="b-line__expression">10 / -"" = <b class="b-result__answer"></b></p>
+                    <p class="b-line__expression">10 / +"2,5" = <b class="b-result__answer"></b></p>
+                    <button class="b-line__button b-line__button_margin_top" onclick="mathCalc()">Рассчитать</button>
+                </fieldset>
+                <p class="b-line__addition">* Загляните в консоль, чтобы увидеть результаты рассчета.</p>
+            </div>
+        </section>
+        <section class="b-homework__line">
+            <div class="b-line__task">
+                <p class="b-line__header">Задача 4</p>
+                <fieldset class="b-line__form-wrapper">
+                    <legend class="b-form__legend">Проверка имен переменных</legend>
+                    <p class="b-line__names">let mode = "normal";<b class="b-result__answer"></b></p>
+                    <p class="b-line__names">let my_valu3 = 102;<b class="b-result__answer"></b></p>
+                    <p class="b-line__names">let 3my_value3 = "102";<b class="b-result__answer"></b></p>
+                    <p class="b-line__names">let __hello__ = "world";<b class="b-result__answer"></b></p>
+                    <p class="b-line__names">let $$$ = "money";<b class="b-result__answer"></b></p>
+                    <p class="b-line__names">let !0_world = true;<b class="b-result__answer"></b></p>
+                    <button class="b-line__button b-line__button_margin_top" onclick="checkName()">Проверить</button>
+                </fieldset>
+            </div>
+        </section>
+        <a href="index.html"><button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">Назад</button></a>
+    </div>
+    <script src="js/homework_1.js"></script>
+</body>
+</html>
