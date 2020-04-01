@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="css/style.css?ver=1.3">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body class="b-page">
+    <section class="b-page__line">
+        <div class="b-line__main-page center">
+            <div class="b-main-page__content">
+                <h1 class="b-main-page__header b-main-page__header_padding">Домашние задания студента <a href="https://geekbrains.ru">Geekbrains</a> – Егора&nbsp;Худолеева</h1>
+                <h3 class="b-main-page__additional b-main-page__additional_padding">Группа от 14.01.2020</h3>
+                <nav class="b-main-page__navigation">
+                    <div class="b-navigation__group b-navigation__group_padding">
+                        <a href="homework_1.html"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 1</button></a>
+                        <a href="homework_2.html"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 2</button></a>
+                        <a href="homework_3.html"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 3</button></a>
+                        <a href="homework_4.html"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 4</button></a>
+                    </div>
+                    <div class="b-navigation__group">
+                        <a href="homework_5.html"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 5</button></a>
+                        <a href="homework_6.html"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 6</button></a>
+                        <a href="#"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 7</button></a>
+                        <a href="#"><button class="b-main-page__homework-links b-main-page__homework-links_margin">Здание 8</button></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="b-main-page__footer b-main-page__footer_padding">Москва 2020</div>
+        </div>
+    </section>
+    <script>
+        let vh = window.innerHeight * 0.01;
+
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+        window.addEventListener('resize', () => {
+            let vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        });
+    </script>
+</body>
+</html>
