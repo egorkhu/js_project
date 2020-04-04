@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript Homework 2</title>
+
+    <link rel="stylesheet" href="css/style.css?ver=1.3">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body class="b-page">
+<div class="b-page__homework center">
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 1</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Объяснение</legend>
+                <p class="b-line__code b-line__code_padding">let a = 1, b = 1, c, d;<i> // происходит обявление переменных и присвоение первым двух значений</i></p>
+                <p class="b-line__code b-line__code_padding">c = ++a;<i> // т.к. используется префиксная форма инкремента, то переменная a сначала увеличится на 1, а потом скопируется в переменную c. Итого: a = 2, с = 2</i></p>
+                <p class="b-line__code b-line__code_padding">alert(c);<i> // ответ: 2</i></p>
+                <p class="b-line__code b-line__code_padding">d = b++;<i> // т.к. используется постфиксная форма инкремента, то сначала выполнится копирование значение из b в d, а потом увеличение b на 1. Итого: d = 1, b = 2</i></p>
+                <p class="b-line__code b-line__code_padding">alert(d);<i> // ответ: 1</i></p>
+                <p class="b-line__code b-line__code_padding">c = 2 + ++a;<i> // сначала увеличение a на 1, в итоге a = 3, прибавляем 2, получается 5 и записываем это значение в переменную c. Итого: a = 3, c = 5</i></p>
+                <p class="b-line__code b-line__code_padding">alert(c);<i> // ответ: 5</i></p>
+                <p class="b-line__code b-line__code_padding">d = 2 + b++;<i> // сначала происходит сложение 2 + b = 2, получим 4, это значение запишется в переменную d, а затем увеличение переменной b на 1. Итого: b = 3, d = 4</i></p>
+                <p class="b-line__code b-line__code_padding">alert(d);<i> // ответ: 4</i></p>
+                <p class="b-line__code b-line__code_padding">alert(a);<i> // ответ: 3</i></p>
+                <p class="b-line__code b-line__code_padding">alert(b);<i> // ответ: 3</i></p>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в код.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 2</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Объяснение</legend>
+                <p class="b-line__code b-line__code_padding">let a = 2;<i> // объявляем переменную a и присваиваем ей значение 2</i></p>
+                <p class="b-line__code b-line__code_padding">let x = 1 + (a *= 2);<i> // выражение в скобках можно представить как (a = a * 2), получим 4, затем к 4 прибавим 1 и получим 5, это значение запишется в переменную x. Итого: a = 4, x = 5</i></p>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в код.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 3</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Рассчет выражения в зависимости от знака операндов</legend>
+                <label for="first-number">Введите первое целое число:
+                    <input type="text" class="b-line__convert" id="first-number">
+                </label>
+                <label for="second-number">Введите второе целое число:
+                    <input type="text" class="b-line__convert" id="second-number">
+                </label>
+                <button class="b-line__button b-line__button_margin_top" onclick="calcResultDependOnSign()">Рассчитать</button>
+                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+            </fieldset>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 4</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Реализация 4-х арифметических операций</legend>
+                <p class="b-line__code b-line__code_padding">Загляните в код, чтобы увидеть реализацию.</p>
+            </fieldset>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 5</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Функция с тремя параметрами</legend>
+                <label for="first-operand">Введите первое число:
+                    <input type="text" class="b-line__convert" id="first-operand">
+                </label>
+                <label for="second-operand">Введите второе число:
+                    <input type="text" class="b-line__convert" id="second-operand">
+                </label>
+                <label for="operator">Что необходимо сделать с числом, поддерживаются: <b>сложить</b>, <b>разделить</b>, <b>умножить</b> и <b>вычесть</b>:
+                    <input type="text" class="b-line__convert" id="operator">
+                </label>
+                <button class="b-line__button b-line__button_margin_top" onclick="getData()">Рассчитать</button>
+                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+            </fieldset>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 6</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Правильное склонение слова "рубли"</legend>
+                <label for="deposit-sum">Введите сумму, которую хотите положить на депозит:
+                    <input type="text" class="b-line__convert" id="deposit-sum">
+                </label>
+                <button class="b-line__button b-line__button_margin_top" onclick="inclineWord()">Рассчитать</button>
+                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+            </fieldset>
+        </div>
+    </section>
+    <a href="index.html"><button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">Назад</button></a>
+</div>
+<script src="js/homework_2.js"></script>
+</body>
+</html>

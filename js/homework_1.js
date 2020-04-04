@@ -6,14 +6,13 @@
  */
 function convertCtoF() {
     let celsium = document.querySelector('.b-line__convert'),
-        answer = document.querySelectorAll('.b-result__answer'),
-        temp = celsium.value;
+        answer = document.querySelectorAll('.b-result__answer');
 
-    if ( temp === '' || isNaN(temp) ) {
+    if ( celsium.value === '' || isNaN(celsium.value) ) {
         answer[0].innerText="Введите число!";
         celsium.value = '';
     } else {
-        let farh = (9 / 5) * temp + 32;
+        let farh = (9 / 5) * celsium + 32;
         answer[0].innerText="Это будет " + farh.toFixed(2) + " градусов по Фаренгейту";
         celsium.value = '';
     }
@@ -86,7 +85,7 @@ function mathCalc() {
 function checkName() {
     let name = document.querySelectorAll('.b-line__names'),
         answer = document.querySelectorAll('.b-result__answer'),
-        userVar;
+        userVar = null;
 
     for ( let i = 0; i < name.length; i++ ) {
         userVar = name[i].innerText;
