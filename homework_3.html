@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript Homework 3</title>
+
+    <link rel="stylesheet" href="css/style.css?ver=1.3">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+<body class="b-page">
+<div class="b-page__homework center">
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 2</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Алгоритм вывода диапазона чисел</legend>
+                <label for="range-number">Введите диапазон чисел в формате число1-число2:
+                    <input type="text" class="b-line__convert" id="range-number">
+                </label>
+                <button class="b-line__button b-line__button_margin_top" onclick="getUserRange()">Вывести</button>
+                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 3</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Вывести в консоль значения</legend>
+                <p class="b-line__code b-line__code_padding">1. post.author</p>
+                <p class="b-line__code b-line__code_padding">2. post.comments[0].rating.dislikes</p>
+                <p class="b-line__code b-line__code_padding">3. post.comments[1].userId</p>
+                <p class="b-line__code b-line__code_padding">4. post.comments[1].text</p>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 4</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Применить скидку с помощью метода forEach</legend>
+                <label for="discount">Введите размер скидки:
+                    <input type="text" class="b-line__convert" id="discount">
+                </label>
+                <button class="b-line__button b-line__button_margin_top" onclick="getDiscount()">Рассчитать</button>
+                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 5</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Фильтрация и сортировка массива</legend>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 6</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Числа от 0 до 9 с помощью цикла for</legend>
+                <p class="b-line__code b-line__code_padding">for (let i = 0; i <= 9; console.log(i++)) {}</p>
+            </fieldset>
+            <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 7</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Горка с помощью цикла for</legend>
+            </fieldset>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 8</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Быки и коровы</legend>
+                <div class="b-line__game-content">
+                    <p class="b-line__code b-line__code_padding">Я загадаю <b>4 неповторяющихся цифры</b>. Твоя задача -
+                        угадать эти цифры в том порядке, в каком я их загадал.</p>
+                    <ul><b>В качестве подсказок я буду сообщать о:</b>
+                        <li>1. Количестве коров - это когда ты угадал цифру, но не её позицию;</li>
+                        <li>2. Количестве быков - ситуация, когда ты отгадал и цифру и позицию цифры.</li>
+                    </ul>
+                    <p class="b-line__code b-line__code_padding">Удачи!</p>
+                </div>
+                <button class="b-line__button b-line__button_margin_top" onclick="numberGenerate()">Загадать число</button>
+            </fieldset>
+        </div>
+    </section>
+    <a href="index.html"><button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">Назад</button></a>
+</div>
+<script src="js/homework_3.js"></script>
+</body>
+</html>
