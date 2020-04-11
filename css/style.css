@@ -245,6 +245,13 @@ label {
   padding: 5px 0;
 }
 
+.b-line__goods i {
+  color: #cccccc;
+}
+.b-line__goods_padding {
+  padding: 5px 0;
+}
+
 .b-line__game-content {
   line-height: 1.5;
 }
@@ -677,6 +684,162 @@ hr {
   height: 20px;
   background: #009641;
   margin: 10px;
+}
+
+.minesweeper__board {
+  border-spacing: 0;
+  background-color: rgba(157, 157, 157, 0.58);
+}
+
+.minesweeper-cell {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 -59px;
+}
+
+.minesweeper-border-top {
+  width: 24px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -60px -122px;
+}
+
+.minesweeper-border-top:first-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 -122px;
+}
+
+.minesweeper-border-top:last-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -15px -122px;
+}
+
+.minesweeper-info:first-child {
+  width: 15px;
+  height: 48px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+.minesweeper-info:last-child {
+  width: 15px;
+  height: 48px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+.minesweeper-info-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minesweeper-mine-count {
+  display: flex;
+}
+
+.minesweeper-mine-count-units, .minesweeper-mine-count-tens, .minesweeper-mine-count-hundreds {
+  width: 20px;
+  height: 35px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 0;
+  margin: 6px 0 7px 0;
+}
+
+.minesweeper-mine-count-hundreds {
+  margin: 6px 0 7px 9px;
+}
+
+.minesweeper-smile-face {
+  width: 39px;
+  height: 39px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 -83px;
+  margin: 4px 0 5px 0;
+}
+
+.minesweeper-timer {
+  display: flex;
+}
+
+.minesweeper-timer-hundreds, .minesweeper-timer-tens, .minesweeper-timer-units {
+  width: 20px;
+  height: 35px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 0;
+  margin: 6px 0 7px 0;
+}
+
+.minesweeper-timer-units {
+  margin: 6px 9px 7px 0;
+}
+
+.minesweeper-border-middle {
+  width: 24px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -60px -122px;
+}
+
+.minesweeper-border-middle:first-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -84px -122px;
+}
+
+.minesweeper-border-middle:last-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -99px -122px;
+}
+
+.minesweeper-border-left {
+  width: 15px;
+  height: 24px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+tr:last-child .minesweeper-border-left {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -30px -122px;
+}
+
+.minesweeper-border-right {
+  width: 15px;
+  height: 24px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+tr:last-child .minesweeper-border-right {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -45px -122px;
+}
+
+.minesweeper-border-bottom {
+  width: 24px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -60px -122px;
+}
+
+.open {
+  background-position: 0 -35px;
+}
+
+.flag {
+  background-position: -24px -59px;
 }
 
 @media (min-width: 767.98px) {

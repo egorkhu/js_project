@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript Homework 4</title>
+
+    <link rel="stylesheet" href="css/style.css?ver=1.3">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+</head>
+    <body class="b-page">
+        <div class="b-page__homework center">
+            <section class="b-homework__line">
+                <div class="b-line__task">
+                    <p class="b-line__header">Задача 1</p>
+                    <fieldset class="b-line__form-wrapper">
+                        <legend class="b-form__legend">Преобразование числа в объект</legend>
+                        <label for="int-to-obj">Введите число в диапазоне от 0 до 999:
+                            <input type="text" class="b-line__convert" id="int-to-obj">
+                        </label>
+                        <button class="b-line__button b-line__button_margin_top" onclick="getUserInt()">Преобразовать</button>
+                        <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+                    </fieldset>
+                </div>
+            </section>
+            <section class="b-homework__line">
+                <div class="b-line__task">
+                    <p class="b-line__header">Задача 2</p>
+                    <fieldset class="b-line__form-wrapper">
+                        <legend class="b-form__legend">Игра - бродилка</legend>
+                        <p class="b-line__game-info b-line__game-info_padding"></p>
+                        <div class="b-line__map"></div>
+                        <label for="move-walker" style="display: none; margin-bottom: 0; margin-top: 15px;">Введите число 1, 2, 3, 4, 6, 7, 8 или 9, чтобы начать движение:
+                            <input type="text" class="b-line__convert" id="move-walker">
+                        </label>
+                        <button class="b-line__button start b-line__button_margin_top" onclick="game.run()">Начать</button>
+                        <button class="b-line__button next b-line__button_margin_top" style="display: none;" onclick="game.userPrompt()">Переместиться</button>
+                    </fieldset>
+                </div>
+            </section>
+            <section class="b-homework__line">
+                <div class="b-line__task">
+                    <p class="b-line__header">Задача 3</p>
+                    <fieldset class="b-line__form-wrapper">
+                        <legend class="b-form__legend">Кто хочет стать миллионером</legend>
+                        <p class="b-line__game-info b-line__game-info_padding"></p>
+                        <div class="b-line__question"></div>
+                        <label for="millionaire" style="display: none; margin-bottom: 0; margin-top: 15px;">Введите число 2, 4, 6 или 8, чтобы начать движение:
+                            <input type="text" class="b-line__convert" id="millionaire">
+                        </label>
+                        <button class="b-line__button start option_1 b-line__button_margin_top">Начать</button>
+                        <button class="b-line__button option_2 b-line__button_margin_top" style="display: none;"></button>
+                        <button class="b-line__button option_3 b-line__button_margin_top" style="display: none;"></button>
+                        <button class="b-line__button option_4 b-line__button_margin_top" style="display: none;"></button>
+                    </fieldset>
+                </div>
+            </section>
+            <a href="index.html"><button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">Назад</button></a>
+        </div>
+        <script src="js/homework_4/task_1.js"></script>
+        <script src="js/homework_4/task_2/markup.js"></script>
+        <script src="js/homework_4/task_2/config.js"></script>
+        <script src="js/homework_4/task_2/player.js"></script>
+        <script src="js/homework_4/task_2/renderer.js"></script>
+        <script src="js/homework_4/task_2/mover.js"></script>
+        <script src="js/homework_4/task_2/game.js"></script>
+        <script src="js/homework_4/task_3/markup.js"></script>
+        <script src="js/homework_4/task_3/difficulty.js"></script>
+        <script src="js/homework_4/task_3/questions.js"></script>
+        <script src="js/homework_4/task_3/checker.js"></script>
+        <script src="js/homework_4/task_3/game.js"></script>
+    </body>
+</html>

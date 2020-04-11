@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
 
     <title>JavaScript Homework 3</title>
 
-    <link rel="stylesheet" href="css/style.css?ver=1.3">
+    <link href="css/style.css?ver=1.3" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
 </head>
 <body class="b-page">
@@ -16,11 +16,12 @@
             <p class="b-line__header">Задача 2</p>
             <fieldset class="b-line__form-wrapper">
                 <legend class="b-form__legend">Алгоритм вывода диапазона чисел</legend>
-                <label for="range-number">Введите диапазон чисел в формате число1-число2:
-                    <input type="text" class="b-line__convert" id="range-number">
+                <label for="range-number">Введите диапазон положительных чисел в формате число1-число2:
+                    <input class="b-line__convert" id="range-number" type="text">
                 </label>
-                <button class="b-line__button b-line__button_margin_top" onclick="getUserRange()">Вывести</button>
-                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+                <button class="b-line__button b-line__button_margin_top" onclick="showUserRange()">Вывести</button>
+                <div class="b-line__result"><b>ИТОГ: </b>
+                    <p class="b-result__answer"></p></div>
             </fieldset>
             <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
         </div>
@@ -44,10 +45,11 @@
             <fieldset class="b-line__form-wrapper">
                 <legend class="b-form__legend">Применить скидку с помощью метода forEach</legend>
                 <label for="discount">Введите размер скидки:
-                    <input type="text" class="b-line__convert" id="discount">
+                    <input class="b-line__convert" id="discount" type="text">
                 </label>
-                <button class="b-line__button b-line__button_margin_top" onclick="getDiscount()">Рассчитать</button>
-                <div class="b-line__result"><b>ИТОГ: </b><p class="b-result__answer"></p></div>
+                <button class="b-line__button b-line__button_margin_top" onclick="applyDiscount()">Рассчитать</button>
+                <div class="b-line__result"><b>ИТОГ: </b>
+                    <p class="b-result__answer"></p></div>
             </fieldset>
             <p class="b-line__addition">* Загляните в отладчик, чтобы увидеть результат в console.</p>
         </div>
@@ -93,12 +95,22 @@
                     </ul>
                     <p class="b-line__code b-line__code_padding">Удачи!</p>
                 </div>
-                <button class="b-line__button b-line__button_margin_top" onclick="numberGenerate()">Загадать число</button>
+                <button class="b-line__button b-line__button_margin_top" onclick="numberGenerate()">Загадать число
+                </button>
             </fieldset>
         </div>
     </section>
-    <a href="index.html"><button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">Назад</button></a>
+    <a href="index.html">
+        <button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">
+            Назад
+        </button>
+    </a>
 </div>
-<script src="js/homework_3.js"></script>
+<script src="js/homework_3/task_2.js"></script>
+<script src="js/homework_3/task_3.js"></script>
+<script src="js/homework_3/task_4.js"></script>
+<script src="js/homework_3/task_5.js"></script>
+<script src="js/homework_3/task_7.js"></script>
+<script src="js/homework_3/task_8.js"></script>
 </body>
 </html>
