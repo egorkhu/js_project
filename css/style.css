@@ -838,8 +838,24 @@ tr:last-child .minesweeper-border-right {
   background-position: 0 -35px;
 }
 
+.pop {
+  background-position: 0 -35px;
+}
+
 .flag {
   background-position: -24px -59px;
+}
+
+.smile-pushed {
+  background-position: -39px -83px;
+}
+
+.smile-surprised {
+  background-position: -78px -83px;
+}
+
+.mine-exploded {
+  background-position: -49px -59px;
 }
 
 @media (min-width: 767.98px) {

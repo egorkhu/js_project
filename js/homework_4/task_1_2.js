@@ -1,44 +1,31 @@
 'use strict'
 
-//es5
-
-function Post(author, text, date) {
+function Post1(author, text, date) {
     this.author = author;
     this.text = text;
     this.date = date;
 }
 
-Post.prototype.edit = function(text) {
+Post1.prototype.edit = function(text) {
     this.text = text;
 };
 
-const post1 = new Post('alex', 'lorem ipsum', new Date());
-console.log(post1);
-post1.edit('dolor sit');
-console.log(post1);
-
-
-function AttachedPost(author, text, date) {
-    Post.call(this, author, text, date);
+function AttachedPost1(author, text, date) {
+    Post1.call(this, author, text, date);
     this.highlighted = false;
 }
 
-AttachedPost.prototype = Object.create(Post.prototype);
-AttachedPost.prototype.constructor = AttachedPost;
+AttachedPost1.prototype = Object.create(Post1.prototype);
+AttachedPost1.prototype.constructor = AttachedPost1;
 
-AttachedPost.prototype.makeTextHighlighted = function() {
+AttachedPost1.prototype.makeTextHighlighted = function() {
     this.highlighted = true;
 };
 
-const attached1 = new AttachedPost('admin', 'lorem2 ipsum2', new Date());
-console.log(attached1);
-attached1.makeTextHighlighted();
-attached1.edit('dolor2 sit2');
-console.log(attached1);
+const post1 = new Post1('Егор', 'привет', '2.10');
+const attachedPost1 = new AttachedPost1('Сава', 'пока', '10.09');
 
-//es6
-
-class Post {
+class Post2 {
     constructor(author, text, date) {
         this.author = author;
         this.text = text;
@@ -50,13 +37,7 @@ class Post {
     }
 }
 
-const post1 = new Post('alex', 'lorem ipsum', new Date());
-console.log(post1);
-post1.edit('dolor sit');
-console.log(post1);
-
-
-class AttachedPost extends Post {
+class AttachedPost2 extends Post2 {
     constructor(author, text, date) {
         super(author, text, date);
         this.highlighted = false;
@@ -67,8 +48,5 @@ class AttachedPost extends Post {
     }
 }
 
-const attached1 = new AttachedPost('admin', 'lorem2 ipsum2', new Date());
-console.log(attached1);
-attached1.makeTextHighlighted();
-attached1.edit('dolor2 sit2');
-console.log(attached1);
+const post2 = new Post2('Алексей', 'хелло', '2.10');
+const attachedPost2 = new AttachedPost2('Аркадий', 'здравствуйте', '10.09');
