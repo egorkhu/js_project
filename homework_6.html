@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>JavaScript Homework 6</title>
+
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="b-page">
+<div class="popup-container">
+    <div class="popup-content">
+        <div class="popup-text">Это всплывающее окно!</div>
+        <i class="popup-close fas fa-times"></i>
+    </div>
+</div>
+<div class="b-page__homework center">
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 1</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Игра «Крестики / нолики»</legend>
+            </fieldset>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 2</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Слайдер</legend>
+                <div class="b-line__slider">
+                    <div class="b-slider__wrapper">
+                        <div class="b-slider__container">
+                            <div class="b-slider__slide" style="transform: translateX(0%)"><img src="img/cat_1.jpg" alt="cat" class="b-slider__img"></div>
+                            <div class="b-slider__slide" style="transform: translateX(0%)"><img src="img/cat_2.jpeg" alt="cat" class="b-slider__img"></div>
+                            <div class="b-slider__slide" style="transform: translateX(0%)"><img src="img/cat_3.jpeg" alt="cat" class="b-slider__img"></div>
+                            <div class="b-slider__slide" style="transform: translateX(0%)"><img src="img/cat_4.jpeg" alt="cat" class="b-slider__img"></div>
+                            <div class="b-slider__slide" style="transform: translateX(0%)"><img src="img/cat_5.jpeg" alt="cat" class="b-slider__img"></div>
+                            <div class="b-slider__slide" style="transform: translateX(0%)"><img src="img/cat_6.jpeg" alt="cat" class="b-slider__img"></div>
+                        </div>
+                    </div>
+                    <div class="b-slider__controls">
+                        <i class="far fa-chevron-left"></i>
+                        <i class="far fa-chevron-right"></i>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <section class="b-homework__line">
+        <div class="b-line__task">
+            <p class="b-line__header">Задача 3</p>
+            <fieldset class="b-line__form-wrapper">
+                <legend class="b-form__legend">Корзина</legend>
+                <div class="b-line__cart-wrapper">
+                    <div class="b-cart">
+                        <i class="fal fa-shopping-cart"></i>
+                        <span style="display: none" class="b-cart__counter">0</span>
+                        <div class="b-cart__popup">
+                            <div class="cart-header">
+                                <span>Название</span>
+                                <span>Цена</span>
+                                <span>Кол-во</span>
+                            </div>
+                            <hr>
+                            <div class="b-popup__total">
+                                <p class="text">ВСЕГО:</p>
+                                <p class="total-sum"><b>0</b><i style="padding-left: 5px" class="far fa-ruble-sign"></i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-wrap" id="product-1">
+                    <div class="product-image">
+                        <img src="img/in_the_box_suite.png" alt="suite">
+                        <div class="shadow"></div>
+                        <div class="actions">
+                            <div class="actions-btn">
+                                <div class="add-to-cart">
+                                    <div class="add-to-cart-button" title="Добавить в корзину">
+                                        <i class="fal fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-to-cart-button__mobile" title="Добавить в корзину">Добавить</div>
+                    <div class="product-list">
+                        <h3>Костюм в клеточку</h3>
+                        <div class="price"><i class="far fa-ruble-sign"></i> 5999</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="product-wrap" id="product-2">
+                    <div class="product-image">
+                        <img src="img/smoking.png" alt="suite">
+                        <div class="shadow"></div>
+                        <div class="actions">
+                            <div class="actions-btn">
+                                <div class="add-to-cart">
+                                    <div class="add-to-cart-button" title="Добавить в корзину">
+                                        <i class="fal fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-to-cart-button__mobile" title="Добавить в корзину">Добавить</div>
+                    <div class="product-list">
+                        <h3>Смокинг</h3>
+                        <div class="price"><i class="far fa-ruble-sign"></i> 8999</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="product-wrap" id="product-3">
+                    <div class="product-image">
+                        <img src="img/blue_suite.png" alt="suite">
+                        <div class="shadow"></div>
+                        <div class="actions">
+                            <div class="actions-btn">
+                                <div class="add-to-cart">
+                                    <div class="add-to-cart-button" title="Добавить в корзину">
+                                        <i class="fal fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add-to-cart-button__mobile" title="Добавить в корзину">Добавить</div>
+                    <div class="product-list">
+                        <h3>Синий костюм</h3>
+                        <div class="price"><i class="far fa-ruble-sign"></i> 4999</div>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <a href="index.html"><button class="b-main-page__homework-links b-homework__back b-main-page__homework-links_margin b-main-page__homework-links_color">Назад</button></a>
+</div>
+<script src="js/homework_6/task_1.js"></script>
+<script src="js/homework_6/task_2.js"></script>
+<script src="js/homework_6/task_3.js"></script>
+</body>
+</html>
