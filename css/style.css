@@ -245,6 +245,13 @@ label {
   padding: 5px 0;
 }
 
+.b-line__goods i {
+  color: #cccccc;
+}
+.b-line__goods_padding {
+  padding: 5px 0;
+}
+
 .b-line__game-content {
   line-height: 1.5;
 }
@@ -617,6 +624,288 @@ hr {
   margin: 10px auto;
 }
 
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+#startBtn, #pauseBtn, #againBtn {
+  width: 100px;
+  padding: 5px;
+  margin: 10px;
+  color: white;
+  background: #007b32;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#startBtn:hover, #pauseBtn:hover, #againBtn:hover {
+  background: #009641;
+}
+
+#startBtn:active, #pauseBtn:active, #againBtn:active {
+  background: #9cfb02;
+  color: black;
+}
+
+#game {
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+#game td {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #909090;
+}
+
+.food {
+  background: #00d021;
+}
+
+.snakeBody {
+  background: #5d5d5d;
+}
+
+#message {
+  color: orange;
+  font-size: 24px;
+}
+
+#score {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: white;
+  width: 20px;
+  height: 20px;
+  background: #009641;
+  margin: 10px;
+}
+
+.minesweeper__board {
+  border-spacing: 0;
+  background-color: rgba(157, 157, 157, 0.58);
+}
+
+.minesweeper-cell {
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 -59px;
+}
+
+.minesweeper-border-top {
+  width: 24px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -60px -122px;
+}
+
+.minesweeper-border-top:first-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 -122px;
+}
+
+.minesweeper-border-top:last-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -15px -122px;
+}
+
+.minesweeper-info:first-child {
+  width: 15px;
+  height: 48px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+.minesweeper-info:last-child {
+  width: 15px;
+  height: 48px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+.minesweeper-info-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.minesweeper-mine-count {
+  display: flex;
+}
+
+.minesweeper-mine-count-units, .minesweeper-mine-count-tens, .minesweeper-mine-count-hundreds {
+  width: 20px;
+  height: 35px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 0;
+  margin: 6px 0 7px 0;
+}
+
+.minesweeper-mine-count-hundreds {
+  margin: 6px 0 7px 9px;
+}
+
+.minesweeper-smile-face {
+  width: 39px;
+  height: 39px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 -83px;
+  margin: 4px 0 5px 0;
+}
+
+.minesweeper-timer {
+  display: flex;
+}
+
+.minesweeper-timer-hundreds, .minesweeper-timer-tens, .minesweeper-timer-units {
+  width: 20px;
+  height: 35px;
+  background-image: url("../img/sprite150.gif");
+  background-position: 0 0;
+  margin: 6px 0 7px 0;
+}
+
+.minesweeper-timer-units {
+  margin: 6px 9px 7px 0;
+}
+
+.minesweeper-border-middle {
+  width: 24px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -60px -122px;
+}
+
+.minesweeper-border-middle:first-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -84px -122px;
+}
+
+.minesweeper-border-middle:last-child {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -99px -122px;
+}
+
+.minesweeper-border-left {
+  width: 15px;
+  height: 24px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+tr:last-child .minesweeper-border-left {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -30px -122px;
+}
+
+.minesweeper-border-right {
+  width: 15px;
+  height: 24px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -201px -59px;
+}
+
+tr:last-child .minesweeper-border-right {
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -45px -122px;
+}
+
+.minesweeper-border-bottom {
+  width: 24px;
+  height: 15px;
+  background-image: url("../img/sprite150.gif");
+  background-position: -60px -122px;
+}
+
+.open {
+  background-position: 0 -35px;
+}
+
+.pop {
+  background-position: 0 -35px;
+}
+
+.flag {
+  background-position: -24px -59px;
+}
+
+.wrong-flag {
+  background-position: -72px -59px;
+}
+
+.smile-pushed {
+  background-position: -39px -83px;
+}
+
+.smile-surprised {
+  background-position: -78px -83px;
+}
+
+.smile-dead {
+  background-position: -117px -83px;
+}
+
+.smile-win {
+  background-position: -156px -83px;
+}
+
+.mine-exploded {
+  background-position: -49px -59px;
+}
+
+.mine {
+  background-position: -96px -59px;
+}
+
+.value-1 {
+  background-position: -24px -35px;
+}
+
+.value-2 {
+  background-position: -48px -35px;
+}
+
+.value-3 {
+  background-position: -72px -35px;
+}
+
+.value-4 {
+  background-position: -96px -35px;
+}
+
+.value-5 {
+  background-position: -120px -35px;
+}
+
+.value-6 {
+  background-position: -144px -35px;
+}
+
+.value-7 {
+  background-position: -168px -35px;
+}
+
+.value-8 {
+  background-position: -192px -35px;
+}
+
 @media (min-width: 767.98px) {
   .center {
     padding: 0 calc(50% - 330px);
@@ -725,6 +1014,40 @@ hr {
   }
   .cart-header span:nth-last-child(2) {
     padding-left: 111px;
+  }
+
+  #game {
+    min-height: 484px;
+  }
+  #game td {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #909090;
+  }
+
+  #score {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    background: #009641;
+    margin: 30px;
+  }
+
+  #startBtn, #pauseBtn, #againBtn {
+    width: 150px;
+    padding: 15px;
+    margin: 10px;
+    color: white;
+    background: #007b32;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 19px;
   }
 }
 @media (min-height: 700px) {
